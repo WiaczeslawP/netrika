@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html, #root, .app {
+    height: 100%;
+}
+
+.items-list-container {
+    height: 100%;
+    display: flex;
+}
+
+.items-list {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    position: relative;
+    padding-left: 20px;
+    overflow-y: auto;
+}
+
+.items-list__item {
+    border-bottom: 1px solid #eeeeee;
+    min-height: 60px;
+    padding: 20px 20px 20px 0;
+}
+
+.edit-items-list {
+    background-color: #eeeeee;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 20px;
+    flex-basis: 50%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.edit-items-list__item {
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
